@@ -1,0 +1,16 @@
+excluded:
+  - Carthage
+
+disabled_rules:
+  - multiple_closures_with_trailing_closure
+  - identifier_name
+  - weak_delegate
+
+trailing_whitespace:
+  ignores_empty_lines: true
+
+nesting:
+  type_level:
+    warning: 2
+
+line_length: 180

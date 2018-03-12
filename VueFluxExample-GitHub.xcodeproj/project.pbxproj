@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B13229E204EF910008EFDA1 /* StoryboardInitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B13229D204EF910008EFDA1 /* StoryboardInitial.swift */; };
+		6B1322B3204F1ED8008EFDA1 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1322B2204F1ED8008EFDA1 /* Result.framework */; };
+		6B175CB2204EE5570094F62C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B175CB1204EE5570094F62C /* AppDelegate.swift */; };
+		6B175CB9204EE5570094F62C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B175CB8204EE5570094F62C /* Assets.xcassets */; };
+		6B175CBC204EE5570094F62C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B175CBA204EE5570094F62C /* LaunchScreen.storyboard */; };
+		6B175CCD204EEE640094F62C /* VueFluxReactive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B175CCB204EEE640094F62C /* VueFluxReactive.framework */; };
+		6B175CCE204EEE640094F62C /* VueFlux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B175CCC204EEE640094F62C /* VueFlux.framework */; };
+		6B175CD6204EF5AE0094F62C /* DeepDiff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B175CD4204EF5AE0094F62C /* DeepDiff.framework */; };
+		6B1A80672051A3960056457D /* NSAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1A80662051A3960056457D /* NSAttributedStringExtension.swift */; };
+		6B1A806A2051A68D0056457D /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1A80692051A68D0056457D /* TextField.swift */; };
+		6B1A806C2051AA7F0056457D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1A806B2051AA7F0056457D /* StringExtension.swift */; };
+		6B4E14DD2051B7CC00F54FA6 /* Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4E14DC2051B7CC00F54FA6 /* Reactive.swift */; };
+		6B4E14DF2051B82E00F54FA6 /* KingfisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4E14DE2051B82E00F54FA6 /* KingfisherExtension.swift */; };
+		6B4E14E12051B85300F54FA6 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B4E14E02051B85300F54FA6 /* Kingfisher.framework */; };
+		6B4E14E32051C44100F54FA6 /* GitHubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4E14E22051C44100F54FA6 /* GitHubRequest.swift */; };
+		6B4E14E52051CB9500F54FA6 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4E14E42051CB9500F54FA6 /* NibLoadable.swift */; };
+		6B4E14E72051CC5300F54FA6 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4E14E62051CC5300F54FA6 /* Reusable.swift */; };
+		6B4EA7822051D0DB008B5F5F /* SearchUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4EA7812051D0DB008B5F5F /* SearchUserRequest.swift */; };
+		6B4EA7842051D113008B5F5F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4EA7832051D113008B5F5F /* User.swift */; };
+		6B4EA7862051DE06008B5F5F /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4EA7852051DE06008B5F5F /* SearchResult.swift */; };
+		6B4EA7882051E6D3008B5F5F /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4EA7872051E6D3008B5F5F /* Debouncer.swift */; };
+		6BB26EF520557FFC0052CF31 /* HeaderXRateLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB26EF420557FFC0052CF31 /* HeaderXRateLimit.swift */; };
+		6BB9F57020515A84008C6C77 /* UserActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9F56F20515A84008C6C77 /* UserActions.swift */; };
+		6BB9F57420515B96008C6C77 /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9F57320515B96008C6C77 /* UserState.swift */; };
+		6BB9F57620515C57008C6C77 /* Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9F57520515C57008C6C77 /* Internal.swift */; };
+		6BB9F5782051753E008C6C77 /* SignalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9F5772051753E008C6C77 /* SignalExtension.swift */; };
+		6BB9F57A205176AE008C6C77 /* UserCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9F579205176AE008C6C77 /* UserCellModel.swift */; };
+		6BB9F57C20517994008C6C77 /* StoreExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9F57B20517994008C6C77 /* StoreExtension.swift */; };
+		6BB9F58120517D30008C6C77 /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9F58020517D30008C6C77 /* CellModel.swift */; };
+		6BB9F587205183AF008C6C77 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9F586205183AF008C6C77 /* UserCell.swift */; };
+		6BB9F589205183DC008C6C77 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BB9F588205183DC008C6C77 /* UserCell.xib */; };
+		6BB9F58B20519188008C6C77 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9F58A20519188008C6C77 /* UITableViewExtension.swift */; };
+		6BB9F58D205192DA008C6C77 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9F58C205192DA008C6C77 /* UIColorExtension.swift */; };
+		6BD28B53205305FD00B05E91 /* vueflux-github.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BD28B522053052E00B05E91 /* vueflux-github.ttf */; };
+		6BD827A0204F248600E36B64 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD8279F204F248600E36B64 /* Alamofire.framework */; };
+		6BD827A1204F2C5500E36B64 /* Alembic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B175CD3204EF5AE0094F62C /* Alembic.framework */; };
+		6BD827A4204F2D7A00E36B64 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD827A3204F2D7A00E36B64 /* Config.swift */; };
+		6BD827A8204F301B00E36B64 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD827A7204F301B00E36B64 /* Session.swift */; };
+		6BD827AE204F33A300E36B64 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD827AB204F338100E36B64 /* Request.swift */; };
+		6BD827B3204F352500E36B64 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD827B2204F352500E36B64 /* URLExtension.swift */; };
+		6BD827BD204F389500E36B64 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD827BC204F389500E36B64 /* DateExtension.swift */; };
+		6BD827C3204F497300E36B64 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD827C2204F496000E36B64 /* UserViewController.swift */; };
+		6BD827C4204F497D00E36B64 /* UserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD827C1204F496000E36B64 /* UserViewController.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B13229D204EF910008EFDA1 /* StoryboardInitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitial.swift; sourceTree = "<group>"; };
+		6B1322B2204F1ED8008EFDA1 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		6B175CAE204EE5570094F62C /* VueFluxExample-GitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VueFluxExample-GitHub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B175CB1204EE5570094F62C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6B175CB8204EE5570094F62C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B175CBB204EE5570094F62C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B175CBD204EE5570094F62C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B175CCB204EEE640094F62C /* VueFluxReactive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VueFluxReactive.framework; path = Carthage/Build/iOS/VueFluxReactive.framework; sourceTree = "<group>"; };
+		6B175CCC204EEE640094F62C /* VueFlux.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VueFlux.framework; path = Carthage/Build/iOS/VueFlux.framework; sourceTree = "<group>"; };
+		6B175CD3204EF5AE0094F62C /* Alembic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alembic.framework; path = Carthage/Build/iOS/Alembic.framework; sourceTree = "<group>"; };
+		6B175CD4204EF5AE0094F62C /* DeepDiff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeepDiff.framework; path = Carthage/Build/iOS/DeepDiff.framework; sourceTree = "<group>"; };
+		6B1A80662051A3960056457D /* NSAttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtension.swift; sourceTree = "<group>"; };
+		6B1A80692051A68D0056457D /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		6B1A806B2051AA7F0056457D /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		6B4E14DC2051B7CC00F54FA6 /* Reactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reactive.swift; sourceTree = "<group>"; };
+		6B4E14DE2051B82E00F54FA6 /* KingfisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherExtension.swift; sourceTree = "<group>"; };
+		6B4E14E02051B85300F54FA6 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		6B4E14E22051C44100F54FA6 /* GitHubRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRequest.swift; sourceTree = "<group>"; };
+		6B4E14E42051CB9500F54FA6 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		6B4E14E62051CC5300F54FA6 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		6B4EA7812051D0DB008B5F5F /* SearchUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserRequest.swift; sourceTree = "<group>"; };
+		6B4EA7832051D113008B5F5F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6B4EA7852051DE06008B5F5F /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		6B4EA7872051E6D3008B5F5F /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
+		6BB26EF420557FFC0052CF31 /* HeaderXRateLimit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderXRateLimit.swift; sourceTree = "<group>"; };
+		6BB9F56F20515A84008C6C77 /* UserActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActions.swift; sourceTree = "<group>"; };
+		6BB9F57320515B96008C6C77 /* UserState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
+		6BB9F57520515C57008C6C77 /* Internal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internal.swift; sourceTree = "<group>"; };
+		6BB9F5772051753E008C6C77 /* SignalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalExtension.swift; sourceTree = "<group>"; };
+		6BB9F579205176AE008C6C77 /* UserCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellModel.swift; sourceTree = "<group>"; };
+		6BB9F57B20517994008C6C77 /* StoreExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreExtension.swift; sourceTree = "<group>"; };
+		6BB9F58020517D30008C6C77 /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		6BB9F586205183AF008C6C77 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		6BB9F588205183DC008C6C77 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		6BB9F58A20519188008C6C77 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		6BB9F58C205192DA008C6C77 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		6BD28B522053052E00B05E91 /* vueflux-github.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "vueflux-github.ttf"; sourceTree = "<group>"; };
+		6BD8279F204F248600E36B64 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		6BD827A3204F2D7A00E36B64 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		6BD827A7204F301B00E36B64 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		6BD827AB204F338100E36B64 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		6BD827B2204F352500E36B64 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
+		6BD827BC204F389500E36B64 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		6BD827C1204F496000E36B64 /* UserViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserViewController.storyboard; sourceTree = "<group>"; };
+		6BD827C2204F496000E36B64 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B175CAB204EE5570094F62C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B4E14E12051B85300F54FA6 /* Kingfisher.framework in Frameworks */,
+				6BD827A1204F2C5500E36B64 /* Alembic.framework in Frameworks */,
+				6BD827A0204F248600E36B64 /* Alamofire.framework in Frameworks */,
+				6B1322B3204F1ED8008EFDA1 /* Result.framework in Frameworks */,
+				6B175CD6204EF5AE0094F62C /* DeepDiff.framework in Frameworks */,
+				6B175CCD204EEE640094F62C /* VueFluxReactive.framework in Frameworks */,
+				6B175CCE204EEE640094F62C /* VueFlux.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B175CA5204EE5570094F62C = {
+			isa = PBXGroup;
+			children = (
+				6B175CB0204EE5570094F62C /* VueFluxExample-GitHub */,
+				6B175CAF204EE5570094F62C /* Products */,
+				6B175CCA204EEE640094F62C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6B175CAF204EE5570094F62C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B175CAE204EE5570094F62C /* VueFluxExample-GitHub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B175CB0204EE5570094F62C /* VueFluxExample-GitHub */ = {
+			isa = PBXGroup;
+			children = (
+				6B175CC4204EE7030094F62C /* Features */,
+				6B175CC6204EE73C0094F62C /* Utilities */,
+				6BD827A5204F300F00E36B64 /* Network */,
+				6BD827AF204F33FA00E36B64 /* Models */,
+				6BD827A2204F2D7200E36B64 /* Config */,
+				6B175CC5204EE73C0094F62C /* Extensions */,
+				6BD28B4F2053040100B05E91 /* Resources */,
+				6B175CB1204EE5570094F62C /* AppDelegate.swift */,
+				6B175CBA204EE5570094F62C /* LaunchScreen.storyboard */,
+				6B175CB8204EE5570094F62C /* Assets.xcassets */,
+				6B175CBD204EE5570094F62C /* Info.plist */,
+			);
+			path = "VueFluxExample-GitHub";
+			sourceTree = "<group>";
+		};
+		6B175CC4204EE7030094F62C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6BD827BE204F496000E36B64 /* Event */,
+				6BB9F57D20517CF5008C6C77 /* Common */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		6B175CC5204EE73C0094F62C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6B4E14DE2051B82E00F54FA6 /* KingfisherExtension.swift */,
+				6BB9F57B20517994008C6C77 /* StoreExtension.swift */,
+				6BB9F5772051753E008C6C77 /* SignalExtension.swift */,
+				6BD827B2204F352500E36B64 /* URLExtension.swift */,
+				6B1A806B2051AA7F0056457D /* StringExtension.swift */,
+				6BD827BC204F389500E36B64 /* DateExtension.swift */,
+				6BB9F58C205192DA008C6C77 /* UIColorExtension.swift */,
+				6BB9F58A20519188008C6C77 /* UITableViewExtension.swift */,
+				6B1A80662051A3960056457D /* NSAttributedStringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6B175CC6204EE73C0094F62C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6B4E14DC2051B7CC00F54FA6 /* Reactive.swift */,
+				6B13229D204EF910008EFDA1 /* StoryboardInitial.swift */,
+				6BB9F57520515C57008C6C77 /* Internal.swift */,
+				6B4E14E42051CB9500F54FA6 /* NibLoadable.swift */,
+				6B4E14E62051CC5300F54FA6 /* Reusable.swift */,
+				6B4EA7872051E6D3008B5F5F /* Debouncer.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6B175CCA204EEE640094F62C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B4E14E02051B85300F54FA6 /* Kingfisher.framework */,
+				6BD8279F204F248600E36B64 /* Alamofire.framework */,
+				6B1322B2204F1ED8008EFDA1 /* Result.framework */,
+				6B175CD3204EF5AE0094F62C /* Alembic.framework */,
+				6B175CD4204EF5AE0094F62C /* DeepDiff.framework */,
+				6B175CCC204EEE640094F62C /* VueFlux.framework */,
+				6B175CCB204EEE640094F62C /* VueFluxReactive.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B1A80682051A6840056457D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B1A80692051A68D0056457D /* TextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BB9F57D20517CF5008C6C77 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6BB9F57E20517CF5008C6C77 /* Model */,
+				6B1A80682051A6840056457D /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6BB9F57E20517CF5008C6C77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BB9F58020517D30008C6C77 /* CellModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6BD28B4F2053040100B05E91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6BD28B522053052E00B05E91 /* vueflux-github.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6BD827A2204F2D7200E36B64 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6BD827A3204F2D7A00E36B64 /* Config.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6BD827A5204F300F00E36B64 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6BD827AA204F338100E36B64 /* Request */,
+				6BD827A7204F301B00E36B64 /* Session.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6BD827AA204F338100E36B64 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				6BD827AB204F338100E36B64 /* Request.swift */,
+				6B4E14E22051C44100F54FA6 /* GitHubRequest.swift */,
+				6B4EA7812051D0DB008B5F5F /* SearchUserRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		6BD827AF204F33FA00E36B64 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B4EA7832051D113008B5F5F /* User.swift */,
+				6B4EA7852051DE06008B5F5F /* SearchResult.swift */,
+				6BB26EF420557FFC0052CF31 /* HeaderXRateLimit.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6BD827BE204F496000E36B64 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				6BD827BF204F496000E36B64 /* Model */,
+				6BD827C0204F496000E36B64 /* View */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		6BD827BF204F496000E36B64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BB9F57320515B96008C6C77 /* UserState.swift */,
+				6BB9F56F20515A84008C6C77 /* UserActions.swift */,
+				6BB9F579205176AE008C6C77 /* UserCellModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6BD827C0204F496000E36B64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BD827C2204F496000E36B64 /* UserViewController.swift */,
+				6BD827C1204F496000E36B64 /* UserViewController.storyboard */,
+				6BB9F586205183AF008C6C77 /* UserCell.swift */,
+				6BB9F588205183DC008C6C77 /* UserCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B175CAD204EE5570094F62C /* VueFluxExample-GitHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B175CC0204EE5570094F62C /* Build configuration list for PBXNativeTarget "VueFluxExample-GitHub" */;
+			buildPhases = (
+				6B175CAA204EE5570094F62C /* Sources */,
+				6B175CAB204EE5570094F62C /* Frameworks */,
+				6B175CAC204EE5570094F62C /* Resources */,
+				6B175CC3204EE6390094F62C /* SwiftLint */,
+				6B175CCF204EEE7F0094F62C /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VueFluxExample-GitHub";
+			productName = "VueFluxExample-GitHub";
+			productReference = 6B175CAE204EE5570094F62C /* VueFluxExample-GitHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B175CA6204EE5570094F62C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Ryo Aoyama";
+				TargetAttributes = {
+					6B175CAD204EE5570094F62C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 6B175CA9204EE5570094F62C /* Build configuration list for PBXProject "VueFluxExample-GitHub" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B175CA5204EE5570094F62C;
+			productRefGroup = 6B175CAF204EE5570094F62C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B175CAD204EE5570094F62C /* VueFluxExample-GitHub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B175CAC204EE5570094F62C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD28B53205305FD00B05E91 /* vueflux-github.ttf in Resources */,
+				6BB9F589205183DC008C6C77 /* UserCell.xib in Resources */,
+				6B175CBC204EE5570094F62C /* LaunchScreen.storyboard in Resources */,
+				6B175CB9204EE5570094F62C /* Assets.xcassets in Resources */,
+				6BD827C4204F497D00E36B64 /* UserViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B175CC3204EE6390094F62C /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nfi";
+		};
+		6B175CCF204EEE7F0094F62C /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/VueFlux.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/VueFluxReactive.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/DeepDiff.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alembic.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which carthage >/dev/null; then\n  carthage copy-frameworks\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B175CAA204EE5570094F62C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B4EA7822051D0DB008B5F5F /* SearchUserRequest.swift in Sources */,
+				6BD827A8204F301B00E36B64 /* Session.swift in Sources */,
+				6B1A80672051A3960056457D /* NSAttributedStringExtension.swift in Sources */,
+				6BD827BD204F389500E36B64 /* DateExtension.swift in Sources */,
+				6B4EA7882051E6D3008B5F5F /* Debouncer.swift in Sources */,
+				6B4EA7842051D113008B5F5F /* User.swift in Sources */,
+				6B1A806A2051A68D0056457D /* TextField.swift in Sources */,
+				6BD827B3204F352500E36B64 /* URLExtension.swift in Sources */,
+				6BD827AE204F33A300E36B64 /* Request.swift in Sources */,
+				6B1A806C2051AA7F0056457D /* StringExtension.swift in Sources */,
+				6BB9F57C20517994008C6C77 /* StoreExtension.swift in Sources */,
+				6BB26EF520557FFC0052CF31 /* HeaderXRateLimit.swift in Sources */,
+				6BB9F58B20519188008C6C77 /* UITableViewExtension.swift in Sources */,
+				6BB9F5782051753E008C6C77 /* SignalExtension.swift in Sources */,
+				6B13229E204EF910008EFDA1 /* StoryboardInitial.swift in Sources */,
+				6BB9F57020515A84008C6C77 /* UserActions.swift in Sources */,
+				6B4E14DD2051B7CC00F54FA6 /* Reactive.swift in Sources */,
+				6BB9F57A205176AE008C6C77 /* UserCellModel.swift in Sources */,
+				6BB9F587205183AF008C6C77 /* UserCell.swift in Sources */,
+				6B4E14E32051C44100F54FA6 /* GitHubRequest.swift in Sources */,
+				6B4E14DF2051B82E00F54FA6 /* KingfisherExtension.swift in Sources */,
+				6B4E14E52051CB9500F54FA6 /* NibLoadable.swift in Sources */,
+				6B4EA7862051DE06008B5F5F /* SearchResult.swift in Sources */,
+				6BB9F57420515B96008C6C77 /* UserState.swift in Sources */,
+				6B175CB2204EE5570094F62C /* AppDelegate.swift in Sources */,
+				6BD827A4204F2D7A00E36B64 /* Config.swift in Sources */,
+				6B4E14E72051CC5300F54FA6 /* Reusable.swift in Sources */,
+				6BB9F57620515C57008C6C77 /* Internal.swift in Sources */,
+				6BB9F58D205192DA008C6C77 /* UIColorExtension.swift in Sources */,
+				6BB9F58120517D30008C6C77 /* CellModel.swift in Sources */,
+				6BD827C3204F497300E36B64 /* UserViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6B175CBA204EE5570094F62C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B175CBB204EE5570094F62C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B175CBE204EE5570094F62C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B175CBF204EE5570094F62C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B175CC1204EE5570094F62C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "VueFluxExample-GitHub/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryo.VueFluxExample-GitHub";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6B175CC2204EE5570094F62C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "VueFluxExample-GitHub/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryo.VueFluxExample-GitHub";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B175CA9204EE5570094F62C /* Build configuration list for PBXProject "VueFluxExample-GitHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B175CBE204EE5570094F62C /* Debug */,
+				6B175CBF204EE5570094F62C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B175CC0204EE5570094F62C /* Build configuration list for PBXNativeTarget "VueFluxExample-GitHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B175CC1204EE5570094F62C /* Debug */,
+				6B175CC2204EE5570094F62C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B175CA6204EE5570094F62C /* Project object */;
+}

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sJ8-A7-FKx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="vueflux-github.ttf">
+            <string>vueflux-github</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--User View Controller-->
+        <scene sceneID="u9l-87-0Pq">
+            <objects>
+                <viewController id="sJ8-A7-FKx" customClass="UserViewController" customModule="VueFluxExample_GitHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OCx-0f-vd9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHC-sK-QH4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <fontDescription key="fontDescription" name="vueflux-github" family="vueflux-github" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Eue-Xx-B9R">
+                                <rect key="frame" x="0.0" y="105" width="375" height="562"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdo-rc-ppt">
+                                <rect key="frame" x="16" y="74" width="18" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4TX-rR-soX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYE-y2-bJP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="github" placeholder="Search Activity" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="msx-o9-JeS" customClass="TextField" customModule="VueFluxExample_GitHub" customModuleProvider="target">
+                                        <rect key="frame" x="48" y="28" width="311" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="SWo-JA-m2W"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textLeadingPadding">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textTrailingPadding">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glg-0B-i3r">
+                                        <rect key="frame" x="16" y="31" width="24" height="24"/>
+                                        <fontDescription key="fontDescription" name="vueflux-github" family="vueflux-github" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="msx-o9-JeS" secondAttribute="trailing" constant="16" id="3m2-Cq-8Aa"/>
+                                    <constraint firstItem="msx-o9-JeS" firstAttribute="leading" secondItem="Glg-0B-i3r" secondAttribute="trailing" constant="8" id="Ilo-4K-EuX"/>
+                                    <constraint firstAttribute="bottom" secondItem="msx-o9-JeS" secondAttribute="bottom" constant="16" id="Q6B-Ea-3x5"/>
+                                    <constraint firstItem="Glg-0B-i3r" firstAttribute="leading" secondItem="DYE-y2-bJP" secondAttribute="leading" constant="16" id="fBW-6d-bz4"/>
+                                    <constraint firstItem="Glg-0B-i3r" firstAttribute="centerY" secondItem="msx-o9-JeS" secondAttribute="centerY" id="rGG-Gc-yyA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNz-Kh-Vjn">
+                                <rect key="frame" x="0.0" y="104" width="375" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="iAY-FD-LgD"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="div-io-CIq">
+                                <rect key="frame" x="341" y="74" width="18" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eNH-Nz-ces" firstAttribute="trailing" secondItem="div-io-CIq" secondAttribute="trailing" constant="16" id="31B-Gz-F88"/>
+                            <constraint firstItem="WNz-Kh-Vjn" firstAttribute="leading" secondItem="eNH-Nz-ces" secondAttribute="leading" id="4GO-nX-KLB"/>
+                            <constraint firstItem="DYE-y2-bJP" firstAttribute="trailing" secondItem="eNH-Nz-ces" secondAttribute="trailing" id="7rC-gw-nwM"/>
+                            <constraint firstItem="DYE-y2-bJP" firstAttribute="leading" secondItem="eNH-Nz-ces" secondAttribute="leading" id="8pf-k9-vub"/>
+                            <constraint firstItem="vdo-rc-ppt" firstAttribute="top" secondItem="DYE-y2-bJP" secondAttribute="bottom" id="AMe-ik-UFd"/>
+                            <constraint firstAttribute="trailing" secondItem="Eue-Xx-B9R" secondAttribute="trailing" id="AUg-zU-kcn"/>
+                            <constraint firstItem="WNz-Kh-Vjn" firstAttribute="top" secondItem="div-io-CIq" secondAttribute="bottom" id="D6u-IM-SHQ"/>
+                            <constraint firstAttribute="bottom" secondItem="LHC-sK-QH4" secondAttribute="bottom" id="EBK-zH-Hwn"/>
+                            <constraint firstItem="eNH-Nz-ces" firstAttribute="trailing" secondItem="WNz-Kh-Vjn" secondAttribute="trailing" id="Ehu-Kl-UdZ"/>
+                            <constraint firstItem="vdo-rc-ppt" firstAttribute="leading" secondItem="eNH-Nz-ces" secondAttribute="leading" constant="16" id="IAC-lh-1Mb"/>
+                            <constraint firstAttribute="bottom" secondItem="Eue-Xx-B9R" secondAttribute="bottom" id="Iz0-XX-Spg"/>
+                            <constraint firstItem="DYE-y2-bJP" firstAttribute="top" secondItem="OCx-0f-vd9" secondAttribute="top" id="JUx-D4-Mfb"/>
+                            <constraint firstItem="Eue-Xx-B9R" firstAttribute="leading" secondItem="OCx-0f-vd9" secondAttribute="leading" id="XJl-sE-jA6"/>
+                            <constraint firstItem="LHC-sK-QH4" firstAttribute="top" secondItem="OCx-0f-vd9" secondAttribute="top" id="XcD-ye-XHK"/>
+                            <constraint firstItem="LHC-sK-QH4" firstAttribute="leading" secondItem="OCx-0f-vd9" secondAttribute="leading" id="c4x-HD-J7C"/>
+                            <constraint firstItem="div-io-CIq" firstAttribute="top" secondItem="DYE-y2-bJP" secondAttribute="bottom" id="mWj-O7-Gc4"/>
+                            <constraint firstAttribute="trailing" secondItem="LHC-sK-QH4" secondAttribute="trailing" id="nyW-xC-2qE"/>
+                            <constraint firstItem="Eue-Xx-B9R" firstAttribute="top" secondItem="WNz-Kh-Vjn" secondAttribute="bottom" id="o2I-af-YIc"/>
+                            <constraint firstItem="WNz-Kh-Vjn" firstAttribute="top" secondItem="vdo-rc-ppt" secondAttribute="bottom" id="zam-4t-5jo"/>
+                            <constraint firstItem="eNH-Nz-ces" firstAttribute="top" secondItem="msx-o9-JeS" secondAttribute="top" constant="-8" id="zfa-Mb-2Ob"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eNH-Nz-ces"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundMarkLabel" destination="LHC-sK-QH4" id="Shw-VP-jKc"/>
+                        <outlet property="countLabel" destination="vdo-rc-ppt" id="6k8-AQ-8NG"/>
+                        <outlet property="headerView" destination="DYE-y2-bJP" id="GS9-QS-XFw"/>
+                        <outlet property="rateLimitLabel" destination="div-io-CIq" id="ARS-0L-fgl"/>
+                        <outlet property="searchTextField" destination="msx-o9-JeS" id="y0I-RJ-3no"/>
+                        <outlet property="tableView" destination="Eue-Xx-B9R" id="am1-AZ-tkY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uQU-cT-Kxz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72.799999999999997" y="189.3553223388306"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="134" id="9QE-XW-QRe" customClass="UserCell" customModule="VueFluxExample_GitHub" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="134"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9QE-XW-QRe" id="Q4u-mW-xPo">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="133.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tLo-Il-iLP">
+                        <rect key="frame" x="16" y="12" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="o8B-YZ-9G8"/>
+                            <constraint firstAttribute="width" secondItem="tLo-Il-iLP" secondAttribute="height" multiplier="1:1" id="xLE-5k-u8k"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NameNameNameNameNameNameNameNameNameNameNameNameNameNameNameNameNameNameNameName" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhU-39-Bmt">
+                        <rect key="frame" x="74" y="12" width="285" height="76.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tLo-Il-iLP" firstAttribute="leading" secondItem="Q4u-mW-xPo" secondAttribute="leading" constant="16" id="Cgx-EM-Xia"/>
+                    <constraint firstItem="PhU-39-Bmt" firstAttribute="leading" secondItem="tLo-Il-iLP" secondAttribute="trailing" constant="8" id="ZXR-zt-erD"/>
+                    <constraint firstAttribute="trailing" secondItem="PhU-39-Bmt" secondAttribute="trailing" constant="16" id="iyt-ik-hc1"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="PhU-39-Bmt" secondAttribute="bottom" constant="12" id="mRo-S0-y0y"/>
+                    <constraint firstItem="tLo-Il-iLP" firstAttribute="top" secondItem="Q4u-mW-xPo" secondAttribute="top" constant="12" id="mkm-Sq-HVy"/>
+                    <constraint firstItem="PhU-39-Bmt" firstAttribute="top" secondItem="tLo-Il-iLP" secondAttribute="top" id="vBv-c1-7nV"/>
+                    <constraint firstItem="PhU-39-Bmt" firstAttribute="centerY" secondItem="tLo-Il-iLP" secondAttribute="centerY" priority="750" id="wrC-qs-D6h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="avatarImageView" destination="tLo-Il-iLP" id="Ada-iG-yHz"/>
+                <outlet property="nameLabel" destination="PhU-39-Bmt" id="VTM-Xq-cd4"/>
+            </connections>
+            <point key="canvasLocation" x="-46.5" y="56"/>
+        </tableViewCell>
+    </objects>
+</document>
