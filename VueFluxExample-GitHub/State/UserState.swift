@@ -45,7 +45,7 @@ struct UserMutations: Mutations {
             state.progress.value = .searching
             
         case .searched(result: .success(let response)):
-            state.cellModels.value = response.data.items.map(UserCellModel.init)
+            state.cellModels.value = response.data.map(UserCellModel.init)
             state.rateLimit.value = response.rateLimit
             state.progress.value = .searched
             

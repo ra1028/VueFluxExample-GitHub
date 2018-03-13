@@ -1,8 +1,7 @@
 import Alamofire
+import Alembic
 
 struct SearchUser: GitHubRequest {
-    typealias ResponseData = SearchResult<User>
-    
     let path = "/search/users"
     let method = HTTPMethod.get
     let parameters: Parameters?
@@ -17,6 +16,10 @@ struct SearchUser: GitHubRequest {
         parameters["sort"] = sort
         parameters["order"] = order
         self.parameters = parameters
+    }
+    
+    func parseData(data: Data) throws -> [User] {
+        return try JSON(data: data).value(for: "items")
     }
 }
 
