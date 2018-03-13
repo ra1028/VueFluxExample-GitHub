@@ -1,14 +1,10 @@
 import Foundation
 
-struct UserCellModel: CellModel {
+struct UserCellModel {
     let id: Int64
     let name: String
     let avatarUrl: URL
     let url: URL
-    
-    var primaryKey: Int64 {
-        return id
-    }
 }
 
 extension UserCellModel {
