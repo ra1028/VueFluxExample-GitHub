@@ -5,8 +5,8 @@ extension Computed where State == UserState {
         return state.cellModels.constant
     }
     
-    var countText: Signal<String> {
-        return state.cellModels.signal.map { "Top \($0.count)" }
+    var countText: Signal<String?> {
+        return state.cellModels.signal.map { !$0.isEmpty ? "Top \($0.count)" : nil }
     }
     
     var isBackgroundMarkHidden: Signal<Bool> {
@@ -50,6 +50,7 @@ struct UserMutations: Mutations {
             state.progress.value = .searched
             
         case .searched(result: .failure):
+            state.cellModels.value.removeAll()
             state.progress.value = .searchFailed
         }
     }

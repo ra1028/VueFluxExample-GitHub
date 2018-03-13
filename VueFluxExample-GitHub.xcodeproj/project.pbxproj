@@ -56,7 +56,6 @@
 		6B175CCB204EEE640094F62C /* VueFluxReactive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VueFluxReactive.framework; path = Carthage/Build/iOS/VueFluxReactive.framework; sourceTree = "<group>"; };
 		6B175CCC204EEE640094F62C /* VueFlux.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VueFlux.framework; path = Carthage/Build/iOS/VueFlux.framework; sourceTree = "<group>"; };
 		6B175CD3204EF5AE0094F62C /* Alembic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alembic.framework; path = Carthage/Build/iOS/Alembic.framework; sourceTree = "<group>"; };
-		6B175CD4204EF5AE0094F62C /* DeepDiff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeepDiff.framework; path = Carthage/Build/iOS/DeepDiff.framework; sourceTree = "<group>"; };
 		6B4E14DC2051B7CC00F54FA6 /* Reactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reactive.swift; sourceTree = "<group>"; };
 		6B4E14DE2051B82E00F54FA6 /* KingfisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherExtension.swift; sourceTree = "<group>"; };
 		6B4E14E02051B85300F54FA6 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
@@ -172,7 +171,6 @@
 				6BD8279F204F248600E36B64 /* Alamofire.framework */,
 				6B1322B2204F1ED8008EFDA1 /* Result.framework */,
 				6B175CD3204EF5AE0094F62C /* Alembic.framework */,
-				6B175CD4204EF5AE0094F62C /* DeepDiff.framework */,
 				6B175CCC204EEE640094F62C /* VueFlux.framework */,
 				6B175CCB204EEE640094F62C /* VueFluxReactive.framework */,
 			);

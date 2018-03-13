@@ -29,12 +29,12 @@ private extension UserViewController {
         store.computed.rateLimitText.bind(to: rateLimitLabel, \.text)
         store.computed.isBackgroundMarkHidden.bind(to: backgroundMarkLabel, \.isHidden)
         
-        store.computed.refreshEnded.bind(to: refreshControl) { refreshControl, _ in
-            refreshControl.endRefreshing()
-        }
-        
         store.computed.cellModels.signal.bind(to: tableView, on: .queue(.main)) { tableView, _ in
             tableView.reloadData()
+        }
+        
+        store.computed.refreshEnded.bind(to: refreshControl) { refreshControl, _ in
+            refreshControl.endRefreshing()
         }
     }
     
