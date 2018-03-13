@@ -1,6 +1,6 @@
 import UIKit
 
-final class UserCell: UITableViewCell, Reusable, NibLoadable {
+final class UserCell: UITableViewCell {
     @IBOutlet private weak var avatarImageView: UIImageView!
     @IBOutlet private weak var nameLabel: UILabel!
     

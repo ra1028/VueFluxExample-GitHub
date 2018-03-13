@@ -14,27 +14,20 @@
 		6B175CBC204EE5570094F62C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B175CBA204EE5570094F62C /* LaunchScreen.storyboard */; };
 		6B175CCD204EEE640094F62C /* VueFluxReactive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B175CCB204EEE640094F62C /* VueFluxReactive.framework */; };
 		6B175CCE204EEE640094F62C /* VueFlux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B175CCC204EEE640094F62C /* VueFlux.framework */; };
-		6B175CD6204EF5AE0094F62C /* DeepDiff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B175CD4204EF5AE0094F62C /* DeepDiff.framework */; };
-		6B1A80672051A3960056457D /* NSAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1A80662051A3960056457D /* NSAttributedStringExtension.swift */; };
-		6B1A806C2051AA7F0056457D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1A806B2051AA7F0056457D /* StringExtension.swift */; };
 		6B4E14DD2051B7CC00F54FA6 /* Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4E14DC2051B7CC00F54FA6 /* Reactive.swift */; };
 		6B4E14DF2051B82E00F54FA6 /* KingfisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4E14DE2051B82E00F54FA6 /* KingfisherExtension.swift */; };
 		6B4E14E12051B85300F54FA6 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B4E14E02051B85300F54FA6 /* Kingfisher.framework */; };
 		6B4E14E32051C44100F54FA6 /* GitHubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4E14E22051C44100F54FA6 /* GitHubRequest.swift */; };
-		6B4E14E52051CB9500F54FA6 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4E14E42051CB9500F54FA6 /* NibLoadable.swift */; };
-		6B4E14E72051CC5300F54FA6 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4E14E62051CC5300F54FA6 /* Reusable.swift */; };
 		6B4EA7822051D0DB008B5F5F /* SearchUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4EA7812051D0DB008B5F5F /* SearchUserRequest.swift */; };
 		6B4EA7842051D113008B5F5F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4EA7832051D113008B5F5F /* User.swift */; };
 		6B4EA7862051DE06008B5F5F /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4EA7852051DE06008B5F5F /* SearchResult.swift */; };
-		6B4EA7882051E6D3008B5F5F /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4EA7872051E6D3008B5F5F /* Debouncer.swift */; };
+		6B8E16C620583A07007976D3 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E16C520583A07007976D3 /* StringExtension.swift */; };
 		6BB26EF520557FFC0052CF31 /* HeaderXRateLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB26EF420557FFC0052CF31 /* HeaderXRateLimit.swift */; };
 		6BB9F57620515C57008C6C77 /* Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9F57520515C57008C6C77 /* Internal.swift */; };
 		6BB9F5782051753E008C6C77 /* SignalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9F5772051753E008C6C77 /* SignalExtension.swift */; };
 		6BB9F57C20517994008C6C77 /* StoreExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9F57B20517994008C6C77 /* StoreExtension.swift */; };
-		6BB9F58B20519188008C6C77 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9F58A20519188008C6C77 /* UITableViewExtension.swift */; };
 		6BB9F58D205192DA008C6C77 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB9F58C205192DA008C6C77 /* UIColorExtension.swift */; };
 		6BC3F60720567CB700CD0159 /* UserCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3F60620567CB700CD0159 /* UserCellModel.swift */; };
-		6BC3F60920567CE200CD0159 /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3F60820567CE100CD0159 /* CellModel.swift */; };
 		6BC3F61420567D1A00CD0159 /* UserActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3F60B20567CEF00CD0159 /* UserActions.swift */; };
 		6BC3F61520567D1E00CD0159 /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3F60D20567CEF00CD0159 /* UserState.swift */; };
 		6BC3F61620567D2300CD0159 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3F60F20567CEF00CD0159 /* TextField.swift */; };
@@ -63,27 +56,20 @@
 		6B175CCB204EEE640094F62C /* VueFluxReactive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VueFluxReactive.framework; path = Carthage/Build/iOS/VueFluxReactive.framework; sourceTree = "<group>"; };
 		6B175CCC204EEE640094F62C /* VueFlux.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VueFlux.framework; path = Carthage/Build/iOS/VueFlux.framework; sourceTree = "<group>"; };
 		6B175CD3204EF5AE0094F62C /* Alembic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alembic.framework; path = Carthage/Build/iOS/Alembic.framework; sourceTree = "<group>"; };
-		6B175CD4204EF5AE0094F62C /* DeepDiff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeepDiff.framework; path = Carthage/Build/iOS/DeepDiff.framework; sourceTree = "<group>"; };
-		6B1A80662051A3960056457D /* NSAttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtension.swift; sourceTree = "<group>"; };
-		6B1A806B2051AA7F0056457D /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		6B4E14DC2051B7CC00F54FA6 /* Reactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reactive.swift; sourceTree = "<group>"; };
 		6B4E14DE2051B82E00F54FA6 /* KingfisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherExtension.swift; sourceTree = "<group>"; };
 		6B4E14E02051B85300F54FA6 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		6B4E14E22051C44100F54FA6 /* GitHubRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRequest.swift; sourceTree = "<group>"; };
-		6B4E14E42051CB9500F54FA6 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
-		6B4E14E62051CC5300F54FA6 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		6B4EA7812051D0DB008B5F5F /* SearchUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserRequest.swift; sourceTree = "<group>"; };
 		6B4EA7832051D113008B5F5F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6B4EA7852051DE06008B5F5F /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
-		6B4EA7872051E6D3008B5F5F /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
+		6B8E16C520583A07007976D3 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		6BB26EF420557FFC0052CF31 /* HeaderXRateLimit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderXRateLimit.swift; sourceTree = "<group>"; };
 		6BB9F57520515C57008C6C77 /* Internal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internal.swift; sourceTree = "<group>"; };
 		6BB9F5772051753E008C6C77 /* SignalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalExtension.swift; sourceTree = "<group>"; };
 		6BB9F57B20517994008C6C77 /* StoreExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreExtension.swift; sourceTree = "<group>"; };
-		6BB9F58A20519188008C6C77 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		6BB9F58C205192DA008C6C77 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		6BC3F60620567CB700CD0159 /* UserCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellModel.swift; sourceTree = "<group>"; };
-		6BC3F60820567CE100CD0159 /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		6BC3F60B20567CEF00CD0159 /* UserActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActions.swift; sourceTree = "<group>"; };
 		6BC3F60D20567CEF00CD0159 /* UserState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
 		6BC3F60F20567CEF00CD0159 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
@@ -109,7 +95,6 @@
 				6BD827A1204F2C5500E36B64 /* Alembic.framework in Frameworks */,
 				6BD827A0204F248600E36B64 /* Alamofire.framework in Frameworks */,
 				6B1322B3204F1ED8008EFDA1 /* Result.framework in Frameworks */,
-				6B175CD6204EF5AE0094F62C /* DeepDiff.framework in Frameworks */,
 				6B175CCD204EEE640094F62C /* VueFluxReactive.framework in Frameworks */,
 				6B175CCE204EEE640094F62C /* VueFlux.framework in Frameworks */,
 			);
@@ -162,11 +147,9 @@
 				6BB9F57B20517994008C6C77 /* StoreExtension.swift */,
 				6BB9F5772051753E008C6C77 /* SignalExtension.swift */,
 				6BD827B2204F352500E36B64 /* URLExtension.swift */,
-				6B1A806B2051AA7F0056457D /* StringExtension.swift */,
 				6BD827BC204F389500E36B64 /* DateExtension.swift */,
 				6BB9F58C205192DA008C6C77 /* UIColorExtension.swift */,
-				6BB9F58A20519188008C6C77 /* UITableViewExtension.swift */,
-				6B1A80662051A3960056457D /* NSAttributedStringExtension.swift */,
+				6B8E16C520583A07007976D3 /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -174,13 +157,9 @@
 		6B175CC6204EE73C0094F62C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				6BC3F60820567CE100CD0159 /* CellModel.swift */,
 				6B4E14DC2051B7CC00F54FA6 /* Reactive.swift */,
 				6B13229D204EF910008EFDA1 /* StoryboardInitial.swift */,
 				6BB9F57520515C57008C6C77 /* Internal.swift */,
-				6B4E14E42051CB9500F54FA6 /* NibLoadable.swift */,
-				6B4E14E62051CC5300F54FA6 /* Reusable.swift */,
-				6B4EA7872051E6D3008B5F5F /* Debouncer.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -192,7 +171,6 @@
 				6BD8279F204F248600E36B64 /* Alamofire.framework */,
 				6B1322B2204F1ED8008EFDA1 /* Result.framework */,
 				6B175CD3204EF5AE0094F62C /* Alembic.framework */,
-				6B175CD4204EF5AE0094F62C /* DeepDiff.framework */,
 				6B175CCC204EEE640094F62C /* VueFlux.framework */,
 				6B175CCB204EEE640094F62C /* VueFluxReactive.framework */,
 			);
@@ -218,11 +196,11 @@
 		6BC3F60E20567CEF00CD0159 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6BC3F60F20567CEF00CD0159 /* TextField.swift */,
+				6BC3F61320567CEF00CD0159 /* UserViewController.swift */,
+				6BC3F61220567CEF00CD0159 /* UserViewController.storyboard */,
 				6BC3F61020567CEF00CD0159 /* UserCell.swift */,
 				6BC3F61120567CEF00CD0159 /* UserCell.xib */,
-				6BC3F61220567CEF00CD0159 /* UserViewController.storyboard */,
-				6BC3F61320567CEF00CD0159 /* UserViewController.swift */,
+				6BC3F60F20567CEF00CD0159 /* TextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -367,7 +345,6 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/VueFlux.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/VueFluxReactive.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/DeepDiff.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alembic.framework",
@@ -389,18 +366,13 @@
 			files = (
 				6B4EA7822051D0DB008B5F5F /* SearchUserRequest.swift in Sources */,
 				6BD827A8204F301B00E36B64 /* Session.swift in Sources */,
-				6B1A80672051A3960056457D /* NSAttributedStringExtension.swift in Sources */,
 				6BD827BD204F389500E36B64 /* DateExtension.swift in Sources */,
-				6B4EA7882051E6D3008B5F5F /* Debouncer.swift in Sources */,
 				6B4EA7842051D113008B5F5F /* User.swift in Sources */,
 				6BD827B3204F352500E36B64 /* URLExtension.swift in Sources */,
 				6BD827AE204F33A300E36B64 /* Request.swift in Sources */,
 				6BC3F61720567D2300CD0159 /* UserCell.swift in Sources */,
-				6B1A806C2051AA7F0056457D /* StringExtension.swift in Sources */,
 				6BB9F57C20517994008C6C77 /* StoreExtension.swift in Sources */,
-				6BC3F60920567CE200CD0159 /* CellModel.swift in Sources */,
 				6BB26EF520557FFC0052CF31 /* HeaderXRateLimit.swift in Sources */,
-				6BB9F58B20519188008C6C77 /* UITableViewExtension.swift in Sources */,
 				6BC3F61420567D1A00CD0159 /* UserActions.swift in Sources */,
 				6BC3F61A20567D2300CD0159 /* UserViewController.swift in Sources */,
 				6BB9F5782051753E008C6C77 /* SignalExtension.swift in Sources */,
@@ -408,15 +380,14 @@
 				6B4E14DD2051B7CC00F54FA6 /* Reactive.swift in Sources */,
 				6B4E14E32051C44100F54FA6 /* GitHubRequest.swift in Sources */,
 				6B4E14DF2051B82E00F54FA6 /* KingfisherExtension.swift in Sources */,
-				6B4E14E52051CB9500F54FA6 /* NibLoadable.swift in Sources */,
 				6B4EA7862051DE06008B5F5F /* SearchResult.swift in Sources */,
 				6B175CB2204EE5570094F62C /* AppDelegate.swift in Sources */,
 				6BC3F61620567D2300CD0159 /* TextField.swift in Sources */,
 				6BD827A4204F2D7A00E36B64 /* Config.swift in Sources */,
-				6B4E14E72051CC5300F54FA6 /* Reusable.swift in Sources */,
 				6BB9F57620515C57008C6C77 /* Internal.swift in Sources */,
 				6BB9F58D205192DA008C6C77 /* UIColorExtension.swift in Sources */,
 				6BC3F61520567D1E00CD0159 /* UserState.swift in Sources */,
+				6B8E16C620583A07007976D3 /* StringExtension.swift in Sources */,
 				6BC3F60720567CB700CD0159 /* UserCellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

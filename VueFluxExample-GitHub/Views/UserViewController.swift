@@ -11,8 +11,7 @@ final class UserViewController: UIViewController, StoryboardInitial {
     private let refreshControl = UIRefreshControl()
     
     private let store = Store<UserState>(state: .init(), mutations: .init())
-    private let loadDebouncer = Debouncer(on: .global())
-    private var loadDisposable: Disposable? {
+    private var searchDisposable: Disposable? {
         didSet { oldValue?.dispose() }
     }
     
@@ -30,16 +29,12 @@ private extension UserViewController {
         store.computed.rateLimitText.bind(to: rateLimitLabel, \.text)
         store.computed.isBackgroundMarkHidden.bind(to: backgroundMarkLabel, \.isHidden)
         
-        store.computed.refreshEnded.bind(to: refreshControl) { refreshControl, _ in
-            refreshControl.endRefreshing()
+        store.computed.cellModels.signal.bind(to: tableView, on: .queue(.main)) { tableView, _ in
+            tableView.reloadData()
         }
         
-        store.computed.cellModelChanges
-            .observe(on: .mainThread)
-            .observe(duringScopeOf: self) { [unowned self] changes in
-                self.tableView.reloadWithoutAnimation(changes: changes) { [weak self] _ in
-                    self?.store.actions.reloadCompleted()
-                }
+        store.computed.refreshEnded.bind(to: refreshControl) { refreshControl, _ in
+            refreshControl.endRefreshing()
         }
     }
     
@@ -55,34 +50,28 @@ private extension UserViewController {
         searchTextField.layer.cornerRadius = 4
         searchTextField.backgroundColor = UIColor(background: .primaryGray)
         searchTextField.textColor = UIColor(text: .primaryWhite)
-        searchTextField.attributedPlaceholder = NSAttributedString(
-            string: .searchUser,
-            attributes: .foregroundColor(UIColor(text: .primaryGray)), .font(.boldSystemFont(ofSize: 14))
-        )
+        searchTextField.attributedPlaceholder = "Search User".attributed(.foregroundColor(UIColor(text: .primaryGray)), .font(.boldSystemFont(ofSize: 14)))
         
         tableView.dataSource = self
         tableView.delegate = self
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.tableFooterView = UIView()
         tableView.addSubview(refreshControl)
-        tableView.register(cellType: UserCell.self)
+        tableView.register(UINib(nibName: UserCell.className, bundle: nil), forCellReuseIdentifier: UserCell.className)
         
         refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
-        searchTextField.addTarget(self, action: #selector(refresh), for: .allEditingEvents)
     }
     
     @objc func refresh() {
         let query = searchTextField.text
-        loadDebouncer.debounce(interval: 0.2) { [weak self] in
-            guard let `self` = self else { return }
-            self.loadDisposable = query.map(self.store.actions.search)
-        }
+        searchDisposable = query.map(store.actions.search)
     }
 }
 
 extension UserViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        refresh()
         return true
     }
 }
@@ -93,35 +82,26 @@ extension UserViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return store.computed.cellModels.count
+        return store.computed.cellModels.value.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(for: indexPath, cellType: UserCell.self)
-        let model = store.computed.cellModels[indexPath.row]
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: UserCell.className, for: indexPath) as? UserCell else { fatalError() }
+        let model = store.computed.cellModels.value[indexPath.row]
         cell.update(with: model)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let model = store.computed.cellModels[indexPath.row]
+        let model = store.computed.cellModels.value[indexPath.row]
         let viewController = SFSafariViewController(url: model.url)
         present(viewController, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let offset: CGFloat = 40
-        let height = scrollView.frame.height
-        let contentHeight = scrollView.contentSize.height
-        let y = scrollView.contentOffset.y
-        let threshold = max(0, contentHeight - height - offset)
-        let isOverThreshold = contentHeight >= height && contentHeight > offset && y >= threshold
-        
-        if isOverThreshold && store.computed.isLoadMoreEnabled {
-            let query = searchTextField.text
-            let nextPage = store.computed.currentPage + 1
-            loadDisposable = query.map { store.actions.loadMore(query: $0, nextPage: nextPage) }
-        }
+}
+
+private extension UserCell {
+    static var className: String {
+        return String(describing: self)
     }
 }
