@@ -18,7 +18,7 @@ extension Computed where State == UserState {
     }
     
     var refreshEnded: Signal<Void> {
-        return state.progress.signal.filter { $0 != .searching }.map { _ in }
+        return state.refreshEnded.signal
     }
 }
 
@@ -26,32 +26,22 @@ final class UserState: State {
     typealias Action = UserAction
     typealias Mutations = UserMutations
     
-    enum Progress {
-        case `default`
-        case searching
-        case searched
-        case searchFailed
-    }
-    
-    fileprivate let progress = Variable(Progress.default)
     fileprivate let cellModels = Variable<[UserCellModel]>([])
     fileprivate let rateLimit = Variable<HeaderXRateLimit?>(nil)
+    fileprivate let refreshEnded = Sink<Void>()
 }
 
 struct UserMutations: Mutations {
     func commit(action: UserAction, state: UserState) {
         switch action {
-        case .searching:
-            state.progress.value = .searching
-            
         case .searched(result: .success(let response)):
             state.cellModels.value = response.data.map(UserCellModel.init)
             state.rateLimit.value = response.rateLimit
-            state.progress.value = .searched
+            state.refreshEnded.send(value: ())
             
         case .searched(result: .failure):
             state.cellModels.value.removeAll()
-            state.progress.value = .searchFailed
+            state.refreshEnded.send(value: ())
         }
     }
 }
