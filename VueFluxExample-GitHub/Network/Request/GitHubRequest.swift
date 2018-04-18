@@ -16,10 +16,6 @@ protocol GitHubRequest: Request {
 }
 
 extension GitHubRequest {
-    typealias Response = (data: ResponseData, rateLimit: HeaderXRateLimit)
-}
-
-extension GitHubRequest {
     var baseUrl: URL {
         return Config.Url.gitHubApiBaseUrl
     }
@@ -38,7 +34,7 @@ extension GitHubRequest {
 }
 
 extension GitHubRequest {
-    func parse(data: Data, response: HTTPURLResponse) throws -> Response {
+    func parse(data: Data, response: HTTPURLResponse) throws -> (data: ResponseData, rateLimit: HeaderXRateLimit) {
         let data = try parseData(data: data)
         let rateLimit: HeaderXRateLimit = try JSON(response.allHeaderFields).value()
         return (data: data, rateLimit: rateLimit)
@@ -47,12 +43,6 @@ extension GitHubRequest {
 
 extension GitHubRequest where ResponseData: Parsable {
     func parseData(data: Data) throws -> ResponseData {
-        return try JSON(data: data).value()
-    }
-}
-
-extension GitHubRequest where ResponseData: Sequence, ResponseData.Element: Parsable {
-    func parseData(data: Data) throws -> [ResponseData.Element] {
         return try JSON(data: data).value()
     }
 }

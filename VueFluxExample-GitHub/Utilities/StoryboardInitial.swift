@@ -1,11 +1,11 @@
 import UIKit
 
-protocol StoryboardInitial: class where Self: UIViewController {
+protocol StoryboardInitial: class {
     static var storyboardName: String { get }
     static var storyboardBundle: Bundle? { get }
 }
 
-extension StoryboardInitial {
+extension StoryboardInitial where Self: UIViewController {
     static var storyboardName: String {
         return .init(describing: self)
     }
