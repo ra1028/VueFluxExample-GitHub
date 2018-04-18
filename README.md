@@ -4,8 +4,8 @@ This is an example project of [VueFlux and VueFluxReactive](https://github.com/r
 <img src="./assets/sample.gif" width="300">
 
 ## :clipboard: Requirements
-- Swift4.0+
-- Xcode9.2+
+- Swift4.1+
+- Xcode9.3+
 - iOS 11.0+
 
 ##  :rocket: Checking out Example & Dependencies
